@@ -35,5 +35,4 @@ def InsertionSort(arr,reverse=False):
                 arr[j+1]=arr[j]
                 j-=1
         arr[j+1]=current
-        print(arr)
     return arr
