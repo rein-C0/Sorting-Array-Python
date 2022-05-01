@@ -7,4 +7,4 @@ Sorting Feature in Python:<br>
 </ul>
 <br>
 <br>
-<h1><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h1>
+<h3><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h3>
