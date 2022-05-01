@@ -6,5 +6,4 @@ Sorting Feature in Python:<br>
   <li><b>Merge Sort</b></li>
 </ul>
 <br>
-<br>
 <h3><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h3>
