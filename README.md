@@ -7,4 +7,5 @@ Sorting Feature in Python:<br>
   <li><b>Quick Sort</b></li>
   <li><b>Heap Sort</b></li>
 </ul>
+![Time & Space Complexity](https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png)
 <h3><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h3>
