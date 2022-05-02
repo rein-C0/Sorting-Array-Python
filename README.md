@@ -8,8 +8,8 @@ Sorting Feature in Python:<br>
   <li><b>Heap Sort</b></li>
 </ul>
 <p>
-    <img src="https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png" width="220" height="240" />
-    [Time & Space Complexity]
+    <img src="https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png"/><br>
+    <h2>[Time & Space Complexity]</h2>
 </p>
 <br>
 <h3><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h3>
