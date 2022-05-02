@@ -106,10 +106,7 @@ def heapify(arr, n, i):
         # Heapify the root.
         heapify(arr, n, largest)
  
-# The main function to sort an array of given size
- 
- 
-def heapSort(arr,reverse=False):
+def HeapSort(arr,reverse=False):
     n = len(arr)
  
     # Build a maxheap.
@@ -121,6 +118,120 @@ def heapSort(arr,reverse=False):
         arr[i], arr[0] = arr[0], arr[i]  # swap
         heapify(arr, i, 0)
         
+    if(reverse):
+        arr=arr[::-1]
+    return arr
+
+def CountSort(arr,reverse=False):
+    max_element = int(max(arr))
+    min_element = int(min(arr))
+    range_of_elements = max_element - min_element + 1
+    # Create a count array to store count of individual
+    # elements and initialize count array as 0
+    count_arr = [0 for _ in range(range_of_elements)]
+    output_arr = [0 for _ in range(len(arr))]
+ 
+    # Store count of each character
+    for i in range(0, len(arr)):
+        count_arr[arr[i]-min_element] += 1
+ 
+    # Change count_arr[i] so that count_arr[i] now contains actual
+    # position of this element in output array
+    for i in range(1, len(count_arr)):
+        count_arr[i] += count_arr[i-1]
+ 
+    # Build the output character array
+    for i in range(len(arr)-1, -1, -1):
+        output_arr[count_arr[arr[i] - min_element] - 1] = arr[i]
+        count_arr[arr[i] - min_element] -= 1
+ 
+    # Copy the output array to arr, so that arr now
+    # contains sorted characters
+    for i in range(0, len(arr)):
+        arr[i] = output_arr[i]
+ 
+    if(reverse):
+        arr=arr[::-1]
+    return arr
+
+def countingSort(arr, exp1):
+ 
+    n = len(arr)
+ 
+    # The output array elements that will have sorted arr
+    output = [0] * (n)
+ 
+    # initialize count array as 0
+    count = [0] * (10)
+ 
+    # Store count of occurrences in count[]
+    for i in range(0, n):
+        index = arr[i] // exp1
+        count[index % 10] += 1
+ 
+    # Change count[i] so that count[i] now contains actual
+    # position of this digit in output array
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+ 
+    # Build the output array
+    i = n - 1
+    while i >= 0:
+        index = arr[i] // exp1
+        output[count[index % 10] - 1] = arr[i]
+        count[index % 10] -= 1
+        i -= 1
+ 
+    # Copying the output array to arr[],
+    # so that arr now contains sorted numbers
+    i = 0
+    for i in range(0, len(arr)):
+        arr[i] = output[i]
+ 
+# Method to do Radix Sort
+def RadixSort(arr,reverse=False):
+ 
+    # Find the maximum number to know number of digits
+    max1 = max(arr)
+ 
+    # Do counting sort for every digit. Note that instead
+    # of passing digit number, exp is passed. exp is 10^i
+    # where i is current digit number
+    exp = 1
+    while max1 / exp > 1:
+        countingSort(arr, exp)
+        exp *= 10
+    if(reverse):
+        arr=arr[::-1]
+    return arr
+
+def ShellSort(arr,reverse=False):
+    gap = len(arr) // 2 # initialize the gap
+ 
+    while gap > 0:
+        i = 0
+        j = gap
+         
+        # check the array in from left to right
+        # till the last possible index of j
+        while j < len(arr):
+     
+            if arr[i] >arr[j]:
+                arr[i],arr[j] = arr[j],arr[i]
+             
+            i += 1
+            j += 1
+         
+            # now, we look back from ith index to the left
+            # we swap the values which are not in the right order.
+            k = i
+            while k - gap > -1:
+ 
+                if arr[k - gap] > arr[k]:
+                    arr[k-gap],arr[k] = arr[k],arr[k-gap]
+                k -= 1
+ 
+        gap //= 2
     if(reverse):
         arr=arr[::-1]
     return arr
