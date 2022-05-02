@@ -6,6 +6,9 @@
   <li><b>Merge Sort</b></li>
   <li><b>Quick Sort</b></li>
   <li><b>Heap Sort</b></li>
+  <li><b>Count Sort</b></li>
+  <li><b>Radix Sort</b></li>
+  <li><b>Shell Sort</b></li>
 </ul>
 <p>
 <h3><ins>Time & Space Complexity</ins></h3>
