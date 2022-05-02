@@ -1,4 +1,4 @@
-Sorting Feature in Python:<br>
+<b>Sorting Feature in Python:</b><br>
 <ul>
   <li><b>Selection Sort</b></li>
   <li><b>Bubble Sort</b></li>
@@ -8,7 +8,8 @@ Sorting Feature in Python:<br>
   <li><b>Heap Sort</b></li>
 </ul>
 <p>
-  <h5>[Time & Space Complexity]</h5>
-    <img src="https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png"/><br>
+<h3><ins>Time & Space Complexity</ins></h3>
+    <img src="https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png"/>
+<h4><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h4>
 </p>
-<h3><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h3>
+
