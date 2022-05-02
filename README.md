@@ -10,6 +10,6 @@
 <p>
 <h3><ins>Time & Space Complexity</ins></h3>
     <img src="https://lamfo-unb.github.io/img/Sorting-algorithms/Complexity.png"/>
-<h4><b>Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h4>
+<h4><b>Reference Source: https://www.geeksforgeeks.org/sorting-algorithms/ </b></h4>
 </p>
 
